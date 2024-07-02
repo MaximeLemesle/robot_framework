@@ -15,6 +15,7 @@ ${STATUS}       Enabled
 ${EMPLOYEE_NAME}   
 ${USERNAME}     
 ${PASSWORD}
+${NEW_EMPLOYEE_NAME}   John Doe
 
 *** Test Cases ***
 My User Management Test

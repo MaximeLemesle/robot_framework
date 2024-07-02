@@ -1,16 +1,11 @@
 *** Keywords ***
 And the visitor searches for the created user
-    # Cliquer sur modifier
-    Wait Until Element Is Visible    //div[contains(@class, 'oxd-table-row oxd-table-row--with-border')]//div[contains(@class, 'oxd-table-cell oxd-padding-cell')][contains(., '${USERNAME}')]    10s
-    Click Element    //*[@id="app"]/div[1]/div[2]/div[2]/div/div[2]/div[3]/div/div[2]/div[1]/div/div[6]/div/button[2]
+    # Rechercher l'utilisateur
+    Wait Until Element Is Visible    //input[contains(@class, 'oxd-input oxd-input--active')]    5s
+    Input Text    //input[contains(@class, 'oxd-input oxd-input--active')]    ${USERNAME}
+    Click Element    //button[contains(@class, 'oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space')]
+    Wait Until Element Is Visible    //div[contains(@class, 'oxd-table-row oxd-table-row--with-border')]//div[contains(@class, 'oxd-table-cell oxd-padding-cell') and text()='${USERNAME}']    5s
     
-    # Modifier le nom de l'employé
-    Wait Until Element Is Visible    //*[@id="app"]/div[1]/div[2]/div[2]/div/div/h6    10s
-    Input Text    //*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div/div[2]/div/div[2]/div/div/input    ${EMPLOYEE_NAME}_Modified
-    
-    # Cliquer sur save
-    Wait Until Element Is Visible    //*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[3]/button[2]    10s
-    Click Element    //*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[3]/button[2]
-    
-    # Attendre que la validatrion
-    Wait Until Element Is Visible    //div[contains(@class, 'oxd-toast-content--success')]    10s
+    # Cliquer sur l'icon modif
+    Click Element    //div[contains(@class, 'oxd-table-row oxd-table-row--with-border')]//div[contains(@class, 'oxd-table-cell oxd-padding-cell') and text()='${USERNAME}']//following-sibling::div/button[2]
+    Wait Until Element Is Visible    //div[@class='orangehrm-card-container']//h6    5s
