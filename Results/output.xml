@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.10.14 on darwin)" generated="20240702 11:36:41.822" rpa="false" schemaversion="4">
+<suite id="s1" name="Tests" source="/Users/maximelemesle/Documents/03_MDS_21-24/03_MDS_23-24/14_Qualité logiciel et test/RobotFramework/robot_framework/Tests">
+<suite id="s1-s1" name="User Management" source="/Users/maximelemesle/Documents/03_MDS_21-24/03_MDS_23-24/14_Qualité logiciel et test/RobotFramework/robot_framework/Tests/user_management.robot">
+<test id="s1-s1-t1" name="My User Management Test" line="13">
+<kw name="Given the visitor go to &quot;https://opensource-demo.orangehrmlive.com/web/index.php/auth/login&quot; on browser &quot;chrome&quot;" sourcename="the visitor go to &quot;${url}&quot; on browser &quot;${browser}&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240702 11:36:41.946" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<status status="PASS" starttime="20240702 11:36:41.946" endtime="20240702 11:36:45.431"/>
+</kw>
+<status status="PASS" starttime="20240702 11:36:41.946" endtime="20240702 11:36:45.431"/>
+</kw>
+<tag>my_user_test</tag>
+<status status="PASS" starttime="20240702 11:36:41.945" endtime="20240702 11:36:45.431"/>
+</test>
+<status status="PASS" starttime="20240702 11:36:41.835" endtime="20240702 11:36:45.432"/>
+</suite>
+<status status="PASS" starttime="20240702 11:36:41.822" endtime="20240702 11:36:45.433"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">my_user_test</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="User Management">Tests.User Management</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
