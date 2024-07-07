@@ -4,5 +4,7 @@ Generate Random Username
     [Return]    ${username}
 
 Generate Password
-    ${password}=    Generate Random String    12    [LETTERS][NUMBERS]
+    ${random_password}=    Generate Random String    11    [LETTERS][NUMBERS]
+    ${random_digit}=    Generate Random String    1    [NUMBERS]
+    ${password}=    Set Variable    ${random_password}${random_digit}
     [Return]    ${password}

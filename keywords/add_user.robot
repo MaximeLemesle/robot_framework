@@ -1,3 +1,7 @@
+*** Settings ***
+Resource    ../ressources/variables.resource
+
+
 *** Keywords ***
 And the visitor adds a new user
     # Cliquer sur add
@@ -43,6 +47,10 @@ And the visitor adds a new user
     Clear Element Text    //*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[2]/div/div[2]/div/div[2]/input
     Input Text    //*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[2]/div/div[2]/div/div[2]/input    ${PASSWORD}
     
+    # Enregistrer les variables globales
+    Set Suite Variable    ${USERNAME}    ${USERNAME}
+    Set Suite Variable    ${PASSWORD}    ${PASSWORD}
+
     # Cliquer sur save
     Wait Until Element Is Visible    //button[contains(@class, 'oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space')]    5s
     Click Element    //button[contains(@class, 'oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space')]
