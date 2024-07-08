@@ -13,7 +13,7 @@ And the visitor deletes the modified user
     Click Element    //button[contains(@class, 'oxd-button--medium oxd-button--secondary') and @type='submit']
     
     # Sélectionner l'utilisateur
-    Wait Until Element Is Visible    //*[@id="app"]/div[1]/div[2]/div[2]/div/div[2]/div[3]/div/div[2]/div[1]    10s
+    Wait Until Element Is Visible    //*[@id="app"]/div[1]/div[2]/div[2]/div/div[2]/div[3]/div/div[2]/div[1]/div/div[6]/div/button[1]    10s
     Click Element    //*[@id="app"]/div[1]/div[2]/div[2]/div/div[2]/div[3]/div/div[2]/div[1]/div/div[6]/div/button[1]
     
     # Attendre que la popup s'affiche
