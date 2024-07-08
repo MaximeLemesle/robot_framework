@@ -6,7 +6,7 @@ Resource   ../keywords/navigate_to_admin.robot
 Resource   ../keywords/add_user.robot
 Resource   ../keywords/search_user.robot
 Resource   ../keywords/modify_user.robot
-# Resource   ../keywords/delete_user.robot
+Resource   ../keywords/delete_user.robot
 Resource   ../ressources/generate_credentials.robot
 
 *** Variables ***
@@ -24,7 +24,7 @@ My User Management Test
     When the visitor clicks on Admin page
     And the visitor adds a new user
     And the visitor searches for the created user
-    # And the visitor modifies the user information
-    # And the visitor deletes the modified user
+    And the visitor modifies the user information
+    And the visitor deletes the modified user
     # And the visitor logs out
     # Then the visitor verifies the login page
