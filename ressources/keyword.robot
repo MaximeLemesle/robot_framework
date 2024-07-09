@@ -21,8 +21,8 @@ Login To OrangeHRM
     Wait Until Page Contains Element    xpath://a[@class='oxd-main-menu-item']    10
 
 Logout From OrangeHRM
-    Click Button    xpath://i[@class='oxd-icon bi-caret-down-fill oxd-userdropdown-icon']
-    Click Link    xpath://a[text()='Logout']
+    Click Element    xpath://div[1]/div[1]/header/div[1]/div[2]/ul/li
+    Click Element    xpath://div[1]/div[1]/header/div[1]/div[2]/ul/li/ul/li[4]
     Wait Until Element Is Visible    xpath://button[@type='submit']    10
 
 Close Browser
