@@ -15,6 +15,8 @@ Add New Employee
     Click Button    xpath=//button[@type='submit']
     Wait Until Page Contains    Personal Details
     Logout From OrangeHRM
+    BuiltIn.Sleep    10
+
     Close Browser
 
 
@@ -42,9 +44,11 @@ Modify Employee Information
     Input Text    xpath=//input[@placeholder='First Name']    ${new_first_name}
     Input Text    xpath=//input[@placeholder='Last Name']    ${new_last_name}
     Click Button    xpath=//button[@type='submit']
-    Wait Until Page Contains    Successfully Saved
+    BuiltIn.Sleep    10
+    Wait Until Page Contains    Successfully Update
     BuiltIn.Sleep    10
     Logout From OrangeHRM
+    BuiltIn.Sleep    10
     Close Browser
 
 Delete Employee
@@ -65,4 +69,5 @@ Delete Employee
     Click Button    xpath=//button[@class='oxd-button oxd-button--medium oxd-button--label-danger orangehrm-button-margin']
     Wait Until Page Contains    No Records Found
     Logout From OrangeHRM
+    BuiltIn.Sleep    10
     Close Browser
