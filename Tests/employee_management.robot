@@ -11,3 +11,8 @@ Modify Employee Information
     [Tags]    modify_employee
     [Documentation]  Test de modification des informations d'un employé
     Modify Employee Information    John Doe    Jonathan    Doe
+
+Delete Employee
+    [Tags]    delete_employee
+    [Documentation]  Test de suppression d'un employé
+    Delete Employee    Jonathan Doe
